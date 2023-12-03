@@ -16,7 +16,7 @@ export const DeleteWarningClient = ( {client}: IDeleteWarningClientProps) => {
     return(
         <div className="modal_box">
             <StyledDeleteWarning className="modal">
-                <StyledH1 fontWeight="bold">{`Are you sure you want to delete your account ${client.name}?`}</StyledH1>
+                <StyledH1 fontWeight="bold">{`Are you sure you want to delete your account, ${client.name}?`}</StyledH1>
 
                 <span>
                     <button className="delete" onClick={() =>{
