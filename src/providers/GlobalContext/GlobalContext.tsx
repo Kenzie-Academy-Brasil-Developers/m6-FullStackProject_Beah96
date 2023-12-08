@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { IClient, IGlobalContextProps, IGlobalProviderProprs } from "./@types";
+import { IGlobalContextProps, IGlobalProviderProprs } from "./@types";
 import { TLoginData } from "../../components/LoginForm/LoginSchema";
 import { api } from "../../services/api";
 import { toast } from "react-toastify";
@@ -40,7 +40,7 @@ export const GlobalProvider = ({ children }: IGlobalProviderProprs) => {
         
         try {
             
-            const { data } = await api.post('/client', newFormData)
+            await api.post('/client', newFormData)
             
             toast.success('Cliente criado com sucesso!')
             if(formData.email && formData.password ){

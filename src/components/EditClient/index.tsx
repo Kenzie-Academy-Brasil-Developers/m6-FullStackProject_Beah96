@@ -17,7 +17,7 @@ export const EditClientModal = ({client}: EditClientModalProps) => {
 
     const { editClient, isDeleteClientOpen, setIsDeleteClientOpen } = useContext(UserContext)
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit} = useForm({
         resolver: zodResolver(clientEditSchema)
     })
 

@@ -22,7 +22,7 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
     
     const editClient =async (formData: TClientEdit) => {
         try {
-            const { data }  = await api.patch<IClient>(`/client/${id}/`, formData, {
+            await api.patch<IClient>(`/client/${id}/`, formData, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

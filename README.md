@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+# Chat Bubble Project - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Links 
 
-Currently, two official plugins are available:
+# Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Essa aplicação está disponível no vercel no encereço:  <a href="https://m6-full-stack-project-beah96-beah96.vercel.app" target="blank"> Chat Bubble </a>
 
-## Expanding the ESLint configuration
+- Para o uso pleno das funcionalidades do site, é preciso rodar a API localmente. 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# API
 
-- Configure the top-level `parserOptions` property like this:
+- A API para essa aplicação está disponível nesse <a href="https://github.com/Kenzie-Academy-Brasil-Developers/m6-FullStackProject" target="blank"> **repositório** </a>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Todas as informações necessárias para a instalação e execução da API estão presentes no arquivo **README.md** do repositório da API

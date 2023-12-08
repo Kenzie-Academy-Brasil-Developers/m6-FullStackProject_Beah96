@@ -16,7 +16,7 @@ interface EditContactModalProps {
 export const EditContactModal = ({contact}: EditContactModalProps) => {
     const { editContact, setIsEditContactOpen, isEditContactOpen, setContact } = useContext(UserContext)
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit} = useForm({
         resolver: zodResolver(contactEditSchema)
     })
 

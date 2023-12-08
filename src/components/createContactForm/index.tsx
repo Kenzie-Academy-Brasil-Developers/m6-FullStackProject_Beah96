@@ -10,7 +10,7 @@ import { StyledContainter } from "./style";
 
 export const CreateContactForm = () => { 
     const { registerContact } = useContext(UserContext)
-    const { register, handleSubmit, formState: { errors } } = useForm<TContactCreate>({
+    const { register, handleSubmit} = useForm<TContactCreate>({
         resolver: zodResolver(contactCreateSchema)
     })
 
